@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background: rgb(41, 41, 41);
+  color: #fff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App__main{
   display: flex;
   flex-direction: column;
+  margin: 10px;
+
+}
+.App__main .steps h1 {
+  font-size: 100px;
+  margin: 0;
+}
+.App__icons{
+  display: flex;
+  margin: 10px;
+  justify-content: space-around;
+}
+.App__icons div {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75em;
+  padding: 10px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.MuiSvgIcon-root{
+  height: 3em !important;
+  width: 3em !important;
+
+}
+.progression {
+  margin-top:10px;
+  height: 15px !important;
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.circle{
+  position: absolute;
+  border-radius: 50%;
+  background: rgb(255, 45, 150);
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #508fb9;
+  opacity: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.small{
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  bottom: -100px;
+}
+
+.medium{
+  width: 400px;
+  height: 400px;
+  left: -200px;
+  bottom: -200px;
+}
+
+.large{
+  width: 600px;
+  height: 600px;
+  left: -300px;
+  bottom: -300px;
+}
+
+.xlarge{
+  width: 800px;
+  height: 800px;
+  left: -400px;
+  bottom: -400px;
+}
+
+.xxlarge{
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  bottom: -500px;
+}
+
+.shade1{
+  opacity: 0.1;
+}
+.shade2{
+  opacity: 0.3;
+}
+
+.shade3{
+  opacity: 0.5;
+}
+
+.shade4{
+  opacity: 0.6;
+}
+
+.shade5{
+  opacity: 0.7;
+}
+
+@keyframes ripple{
+  0%{
+    transform: scale(0.8);
   }
-  to {
-    transform: rotate(360deg);
+  
+  50%{
+    transform: scale(1.2);
+  }
+  
+  100%{
+    transform: scale(0.8);
   }
 }
