@@ -8,7 +8,7 @@ import DirectionsWalkIcon from '@material-ui/icons/DirectionsWalk';
 import { LinearProgress } from '@material-ui/core';
 
 
-function App() {
+const App = () => {
   let max = 3
   let min = 2
   const [steps, setSteps] = useState(Math.floor((Math.random() * (+max - +min) + +min) * 1000))
