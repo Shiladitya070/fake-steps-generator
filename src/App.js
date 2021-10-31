@@ -37,7 +37,7 @@ const App = () => {
         </div>
         <div class='ripple-background'>
           <div class='circle xxlarge shade1'>
-            <h1>Thanks </h1>
+            <h1>Thanks for Visiting </h1>
           </div>
           <div class='circle xlarge shade2'></div>
           <div class='circle large shade3'></div>
