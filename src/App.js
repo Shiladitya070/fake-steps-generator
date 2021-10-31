@@ -8,7 +8,7 @@ import DirectionsWalkIcon from '@material-ui/icons/DirectionsWalk';
 import { LinearProgress } from '@material-ui/core';
 
 
-function App() {
+const App = () => {
   let max = 3
   let min = 2
   const [steps, setSteps] = useState(Math.floor((Math.random() * (+max - +min) + +min) * 1000))
@@ -37,7 +37,7 @@ function App() {
         </div>
         <div class='ripple-background'>
           <div class='circle xxlarge shade1'>
-            <h1>Thanks </h1>
+            <h1>Thanks for Visiting </h1>
           </div>
           <div class='circle xlarge shade2'></div>
           <div class='circle large shade3'></div>
